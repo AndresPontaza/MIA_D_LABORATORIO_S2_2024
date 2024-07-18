@@ -1,2 +1,5 @@
-# MIA_D_LABORATORIO_S2_2024
- Repositorio de Ejemplos
+# Laboratorio MIA "D" 📚
+Repositorio de ejemplos del Laboratorio 
+
+## Autor ✒️
+Andres Eduardo Pontaza Muralles 
