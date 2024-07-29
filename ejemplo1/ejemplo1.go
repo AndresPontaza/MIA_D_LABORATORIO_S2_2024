@@ -65,6 +65,10 @@ func RegistroProfesor() {
 	var curso string
 
 	// abrir archivo en modo escritura
+	// * 0644: permisos de lectura y escritura
+	// * os.O_APPEND: añadir al final del archivo
+	// * os.O_WRONLY: solo escritura
+	// * os.O_CREATE: crear el archivo si no existe
 	arch, err := os.OpenFile("Registros.dat", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
 
 	// Verificar si hubo un error
@@ -120,6 +124,8 @@ func RegistroEstudiante() {
 // Función VerRegistros
 func VerRegistros() {
 	// abrir archivo en modo lectura
+	// * 0644: permisos de lectura y escritura
+	// * os.O_RDONLY: solo lectura
 	arch, err := os.OpenFile("Registros.dat", os.O_RDONLY, 0644)
 	if err != nil {
 		fmt.Println(err)
