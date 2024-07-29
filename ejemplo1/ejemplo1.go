@@ -170,9 +170,13 @@ func VerRegistros() {
 
 // Función CrearArchivo
 func CrearArchivo() {
+	// Verificar si el archivo existe
+	// * os.Stat: devuelve información sobre el archivo
+	// * os.IsNotExist: verifica si el archivo no existe
 	if _, err := os.Stat("Registros.dat"); os.IsNotExist(err) {
 		// Crear archivo si no existe
 		arch, err := os.Create("Registros.dat")
+		// Verificar si hubo un error
 		if err != nil {
 			fmt.Println(err)
 			return
