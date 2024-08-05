@@ -1,0 +1,5 @@
+# MKDISK
+mkdisk -size=5 -unit=M -path=/home/andres-pontaza/Escritorio/MIA/Discos/A.dsk
+
+# REP
+rep
