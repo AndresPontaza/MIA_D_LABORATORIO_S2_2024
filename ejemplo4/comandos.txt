@@ -1,0 +1,8 @@
+# MKDISK
+mkdisk -size=5 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk"
+
+# RMDISK
+rmdisk -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk"
+
+$ FDISK
+fdisk -Size=300 -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion1
