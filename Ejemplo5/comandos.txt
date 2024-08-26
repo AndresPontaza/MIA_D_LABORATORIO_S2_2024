@@ -1,0 +1,19 @@
+# MKDISK
+mkdisk -size=5 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk"
+
+# RMDISK
+rmdisk -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk"
+
+# FDISK
+# Particion 1 (Primaria)
+fdisk -Size=300 -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion1
+# Particion 2 (Extendida)
+fdisk -type=E -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -Unit=K -name=Particion2 -size=300
+# Particion N (Logica) depende de la extendida
+fdisk -size=300 -type=L -unit=K -fit=BF -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name="ParticionN"
+# Particion 3 (Primaria)
+fdisk -Size=300 -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion3
+# Particion 4 (Primaria)   
+fdisk -Size=300 -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion4 
+# Particion 5 (Primaria) Error ya llego al limite de 4 Primarias o de 3 Primarias y 1 Logica   
+fdisk -Size=300 -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion5 
