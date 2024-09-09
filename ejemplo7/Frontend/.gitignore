@@ -1,0 +1,51 @@
+# Node.js dependencies
+/node_modules/
+/package-lock.json
+/npm-debug.log
+/yarn-error.log
+
+# Angular build outputs
+/dist/
+/out-tsc/
+/build/
+
+# Angular generated files
+/.angular/cache/
+/.angular/
+
+# Environment settings
+/src/environments/*.ts
+
+# Compiled TypeScript files
+*.js
+*.js.map
+
+# IDE or editor folders
+/.idea/
+/.vscode/
+/*.suo
+/*.ntvs*
+/*.njsproj
+/*.sln
+/.history/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Angular specific logs and temporary files
+/angular.json
+/.browserslistrc
+/coverage/
+
+# Temporary build files
+*.tmp
+*.temp
+*.bak
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
