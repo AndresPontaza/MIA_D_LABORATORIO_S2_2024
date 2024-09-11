@@ -1,27 +1,23 @@
-# Ejemplo11
+# Ejemplo7
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+Este es un proyecto contruido con [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
+## Crear proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El creo el proyecto con `ng new ejemplo7`.
 
-## Code scaffolding
+## Instalación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para instalar el proyecto es con `npm install`.
 
-## Build
+## Servidor de desarrollo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para ejecutar el proyecto es con `ng serve`. Acceder a `http://localhost:4200/` para visualizar la aplicación.
 
-## Running unit tests
+## Componentes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para crear componentes es con `ng generate component component-name`.
 
-## Running end-to-end tests
+## Construcción de la aplicación 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para contruir la aplicacion es con `ng build`. Los artefactos de construcción se almacenarán en el directorio `dist/`.
