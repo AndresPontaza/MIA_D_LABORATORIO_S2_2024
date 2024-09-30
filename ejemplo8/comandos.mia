@@ -1,0 +1,32 @@
+# RMDISK
+rmdisk -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk"
+
+# MKDISK
+mkdisk -size=5 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk"
+
+# FDISK
+# Particion 1 (Primaria)
+fdisk -Size=1 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion1
+# Particion 1 (Primaria)
+fdisk -Size=1 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion2
+# Particion 3 (Primaria)
+fdisk -Size=1 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion3
+# Particion 4 (Primaria)   
+fdisk -Size=2 -unit=M -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion4 
+
+# MOUNT
+# Ultimos dos digitos de mi carnet = 30
+# id=301A
+mount -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion1
+# id=301B
+mount -path="/home/andres-pontaza/Documentos/Laboratorio MIA/Discos/A.dsk" -name=Particion2
+
+# MKFS
+# Realiza un formateo completo de la partición en el id 061A en ext2
+mkfs -type=full -id=301A
+# Realiza un formateo completo de la partición que ocupa el id 062A
+mkfs -id=301B
+
+# REP
+# DISK
+rep -id=301A -Path="/home/andres-pontaza/Documentos/Laboratorio MIA/Reportes/Disk.jpg" -name=disk
