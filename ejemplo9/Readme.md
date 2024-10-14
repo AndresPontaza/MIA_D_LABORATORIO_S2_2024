@@ -56,4 +56,4 @@ git pull
 
 ## Link del sitio web en AWS
 
-http://test-ejemplo9.s3-website.us-east-2.amazonaws.com
+http://mia-ejemplo9.s3-website.us-east-2.amazonaws.com
